@@ -19,10 +19,10 @@ int main()
   cin>>previous;      
   cout<<endl<<"Enter Current Meter Reading: ";
   cin>>current;       
-  cout<<endl<<"Did Customer Pay The Previous Bill? (Press 'Y' or 'N'): ";
+  cout<<endl<<"Did Customer Pay The Previous Bill? (Press 1 for Yes and 0 for No): ";
   cin>>unpaid_balance;        
   gallons=current-previous;
-  if (unpaid_balance== 'Y')       
+  if (unpaid_balance== '1')       
   {
    bill=(charge_per_gallon*gallons)+demand;
   }
@@ -30,11 +30,11 @@ int main()
   {
    bill=(charge_per_gallon*gallons)+demand+latecharge; 
   }
-  cout<<endl<<"Water Bill="<<bill<<"php"<<endl;    
   cout<<endl<<"=============================================================="<<endl;
+  cout<<endl<<"Water Bill = "<<bill<<" php"<<endl;    
+ 
 getch();
 return 0;
 }
-
 
 
