@@ -3,12 +3,14 @@
 #include <iomanip>
 #include <math.h>
 #include <conio.h>
+#include <cmath>
 
 using namespace std;
 int main()
 {
-  double x,y,v,num;
-  int num1;
+  double y,v,num;
+  double num1;
+  int x;
   const double z=2.5;
 
   cout <<"Input the value of x: ";
@@ -16,7 +18,7 @@ int main()
   cout << "Input the value of y: ";
   cin>>y;
 
-switch(x<3)
+switch(x)
 {
  case 1: 
   if(y>1&&y<5)
@@ -35,16 +37,17 @@ switch(x<3)
     cout << "V is equal to:"<<setw(10)<<v<<setprecision(2);
   }
   break;
+  
  case 2:
   if(y<=5)
   {
-    num=(x-y)/z;
+    num1=(x-y)/z;
     v=abs(num1);
     cout << "V is equal to:"<<setw(10)<<v<<setprecision(2);
   }
   else if (y>5)
   {
-    num=sqrt(x+z);
+    num=sqrt(y+z);
     v=x-num;
     cout << "V is equal to:"<<setw(10)<<v<<setprecision(2);
   }
