@@ -12,7 +12,7 @@ int main(){
 
   if(n<=0){
       cout<<"Thank you.";
-	  break;
+      break;
    }
    else{
     
@@ -29,6 +29,5 @@ int main(){
     return 0;
 
 }
-
 
 
