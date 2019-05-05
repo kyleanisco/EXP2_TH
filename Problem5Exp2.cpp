@@ -27,11 +27,23 @@ int main()
         first = second;
         second = nextTerm;
         
-        cout << nextTerm << " , ";
-    }
-getch();
-return 0;
-
+        
+        
+        if (nextTerm==10946)
+        {
+        	cout << nextTerm << " ";
+			break;
+		} 
+		else
+		{
+			cout << nextTerm << " , ";
+		}
+		
+	}
+	getch();
+	return 0;
 }
+
+
 
 
